@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "dependencies": {
+    "@cypress/grep": "4.1.0",
+    "cypress": "^14.3.3",
+    "joi": "17.13.3"
+  },
+  "devDependencies": {
+    "allure-cypress": "^3.2.2"
+  }
+}
