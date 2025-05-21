@@ -1,6 +1,0 @@
-services:
-  cypress-api:
-    image: cypress-test-api
-    build: .
-    volumes:
-      - ./allure-results:/app/allure-results
