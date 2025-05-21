@@ -2,7 +2,6 @@ const Joi = require('joi');
 /**
  * Schema POST do endpoint Boards
  */
-
 export const boardSchema = Joi.object({
     id: Joi.string().length(24).hex().required(),
     name: Joi.string().min(1).max(100).required(),

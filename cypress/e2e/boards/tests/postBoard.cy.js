@@ -13,7 +13,7 @@ describe('POST - Validar endpoint boards/', () => {
         })
     })
 
-    it('Validar schema response da requisiçõa cadastro de boards', () => {
+    it('Validar schema response da requisição cadastro de boards', () => {
         request.postBoard('BoardTeste').then((response) => {
             return schema.boardSchema.validateAsync(response.body)
         })

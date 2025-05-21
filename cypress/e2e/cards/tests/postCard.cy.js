@@ -16,7 +16,7 @@ describe('POST - Validar endpoint cards/', () => {
         })
     })
 
-    it('Validar schema response da requisiçõa cadastro de card', () => {
+    it('Validar schema response da requisição cadastro de card', () => {
         cy.cadastrarLista().then((idList) => {
             request.postCard(idList).then((response) => {
                 return schema.CardSchema.validateAsync(response.body)
